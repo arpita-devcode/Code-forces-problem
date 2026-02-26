@@ -1,4 +1,1 @@
-#include <iostream>
-using namespace std;
-
-int main() {
+//https://codeforces.com/problemset/problem/43/A

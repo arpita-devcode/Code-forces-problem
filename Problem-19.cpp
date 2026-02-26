@@ -1,3 +1,4 @@
+//https://codeforces.com/contest/520/problem/A
 #include <iostream>
 #include <cctype>
 using namespace std;
