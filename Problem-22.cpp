@@ -1,3 +1,4 @@
+//https://codeforces.com/problemset/problem/144/A
 #include <iostream>
 #include<vector>
 using namespace std;
