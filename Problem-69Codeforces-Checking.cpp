@@ -8,11 +8,11 @@ int main() {
     cin>>n;
     string check = "codeforces";
     for(int i=0; i<n; i++){
-        char s1;
+        char s;
         bool exist = false;
-        cin>>s1;
+        cin>>s;
         for(int j=0; j<10; j++ ){
-            if(s1 == check[j]){
+            if(s == check[j]){
                exist = true;
             }
         }
