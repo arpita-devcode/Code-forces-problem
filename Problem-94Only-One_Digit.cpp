@@ -1,30 +1,29 @@
-//https://codeforces.com/contest/2126/problem/A
+//codeforces.com/contest/2126/problem/A
 #include <iostream>
+#include <set>
 using namespace std;
 
 int main() {
-
     int t;
     cin >> t;
 
     while(t--){
-        int n;
-        string s;
-        cin >> n >> s;
+        int x;
+        cin >> x;
 
-        int x = 0, y = 0;
-
-        for(char c : s){
-            if(c=='L') x--;
-            else if(c=='R') x++;
-            else if(c=='U') y++;
-            else if(c=='D') y--;
+        set<int> digits;
+        int temp = x;
+        while(temp > 0){
+            digits.insert(temp % 10);
+            temp /= 10;
         }
 
-        if(x==0 && y==0)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        for(int i=0;i<=9;i++){
+            if(digits.count(i)){
+                cout << i << endl;
+                break;
+            }
+        }
     }
 
     return 0;
