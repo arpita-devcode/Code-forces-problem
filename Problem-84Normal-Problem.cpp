@@ -1,0 +1,25 @@
+//https://codeforces.com/contest/2044/problem/B
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        string s;
+        cin>>s;
+        for(int j=s.size()-1;j>=0;j--){
+            if(s[j]=='p'){
+                cout<<"q";
+            }
+            else if(s[j]=='q'){
+                cout<<"p";
+            }
+            else cout<<s[j];
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
