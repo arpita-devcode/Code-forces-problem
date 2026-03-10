@@ -1,6 +1,6 @@
 //https://codeforces.com/contest/1371/problem/A
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -9,8 +9,7 @@ int main() {
     while(t--) {
         long long n;
         cin >> n;
-        long long sum = n * (n + 1) / 2; // sum of 1..n
-        cout << sum << endl;
+        cout << (n + 1) / 2 << "\n"; // ceil(n/2)
     }
     return 0;
 }
